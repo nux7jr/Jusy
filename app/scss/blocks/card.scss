@@ -1,0 +1,10 @@
+.card {
+  padding-bottom: 35px;
+}
+.card__list {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+// сделать по центу контент

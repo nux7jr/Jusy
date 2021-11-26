@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__menu {
+  list-style-type: none;
+
+  display: flex;
+
+  margin: 15px;
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    font-weight: 600;
+
+    padding: 3px;
+  }
+  .bnt-change-theme {
+    color: black;
+
+    font-weight: 600;
+    padding: 3px;
+  }
+  .bnt-search {
+    color: black;
+
+    font-weight: 600;
+    padding: 3px;
+  }
+}
