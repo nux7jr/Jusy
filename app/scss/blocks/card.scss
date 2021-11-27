@@ -3,8 +3,23 @@
 }
 .card__list {
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
   flex-wrap: wrap;
 }
-// сделать по центу контент
+.card__item {
+  max-width: 400px;
+
+  display: block;
+
+  margin: 0;
+  border: 5px solid rgb(100, 90, 90);
+}
+.card__item:nth-child(2) {
+  margin: 0 auto;
+} // Выравнивание
+
+// @media (max-width: 1199.98px) {
+//   .card__item:nth-child(2) {
+//     margin: 0;
+//   }
+// }

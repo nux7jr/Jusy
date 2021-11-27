@@ -1,0 +1,12 @@
+@mixin theme_color(
+  $color: #f4f4f4,
+  $bg__color: #373737,
+  $border__color: rgb(138, 127, 127)
+) {
+  color: $color;
+  background-color: $bg__color;
+}
+
+body {
+  @include theme_color(rgb(252, 252, 252), #111111, rgb(214, 196, 196));
+}

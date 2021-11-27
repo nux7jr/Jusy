@@ -1,14 +1,45 @@
-const testString = 'This is a test!';
+// const testString = 'This is a test!';
 
-console.log(testString);
+// console.log(testString);
 
-const fruits = [
-  'mango',
-  'papaya',
-  'lychee',
-];
+// const fruits = [
+//   'mango',
+//   'papaya',
+//   'lychee',
+// ];
 
-fruits.map((fruit) => {
-  console.log(fruit);
-});
+// fruits.map((fruit) => {
+//   console.log(fruit);
+// });
 
+// theme
+
+var btn = document.getElementById("bnt-change-theme")
+var link = document.getElementById("theme-link");
+
+
+btn.addEventListener("click", function () { ChangeTheme(); });
+
+function ChangeTheme()
+{
+    let lightTheme = "/dist/style/blocks/lite-theme.css";
+    let darkTheme = "/dist/style/blocks/dark-theme.css";
+    console.log("222")
+    var currTheme = link.getAttribute("href");
+    var theme = "";
+
+    if(currTheme == lightTheme)
+    {
+   	 currTheme = darkTheme;
+   	 theme = "dark";
+    }
+    else
+    {    
+   	 currTheme = lightTheme;
+   	 theme = "light";
+    }
+
+    link.setAttribute("href", currTheme);
+
+    Save(theme);
+}

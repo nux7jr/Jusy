@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/dist/style/style.css">
+  <!-- defalt lite theme -->
+  <link rel="stylesheet" href="/dist/style/blocks/lite-theme.css" id="theme-link">
   <title>Jusy</title>
 </head>
 <body>
@@ -18,7 +20,8 @@
       </ul>
       <img class="nav__logo" src="https://via.placeholder.com/150x80/FF0000/FFFFFF?Text=Jusy.com" alt="logo">
       <ul class="nav__menu">
-        <li class="nav__link bnt-change-theme">Change theme</li>
+        <button class="nav__link" id="bnt-change-theme">Change theme</button>
+        <!-- <li class="nav__link bnt-change-theme">Change theme</li> -->
         <li class="nav__link bnt-search">Search</li>
         <li class="nav__link"><a href="#">Корзина</a></li>
       </ul>
@@ -58,11 +61,15 @@
   </section>
   <!-- Основная иформация и видео -->
   <article class="main-info">
-    <h1 class="main-info__text visually-hidden">Видео и основная информация</h1>
+    <h1 class="visually-hidden">Видео и основная информация</h1>
+    <div class="main-info__item">
       <iframe class="main-info__video" width="740" height="400" src="https://www.youtube.com/embed/1oyvcRuX8zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="main-info__text">Видео о нас</p>
-    <p class="main-info__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как доставляются наши товары.</p>
-    <button class="main-info__bnt-order">Заказать</button>
+    </div>
+    <div class="main-info__item">
+      <p class="main-info__text">Видео о нас</p>
+      <p class="main-info__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как доставляются наши товары.</p>
+      <button class="main-info__bnt-order">Заказать</button>
+    </div>
   </article>
   <!-- Футер -->
   <footer>
@@ -80,6 +87,6 @@
       </div>
   </footer>
 </body>
-<script src="/dist/script.js"></script>
+<script src="/dist/script.js" defer></script>
 </html>
 
