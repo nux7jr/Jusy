@@ -21,7 +21,7 @@ function scssTask(){
 // JavaScript Task
 function jsTask(){
   return src('app/js/script.js', { sourcemaps: true })
-    .pipe(dest('dist', { sourcemaps: '.' }));
+    .pipe(dest('dist/js', { sourcemaps: '.' }));
 }
 
 // Browsersync Tasks

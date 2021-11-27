@@ -6,22 +6,19 @@ nav {
   list-style-type: none;
 
   display: flex;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.nav__button {
+  background: inherit;
+  border: none;
+}
+.nav__link {
+  text-decoration: none;
 
-  margin: 15px;
+  font-size: 1.4em;
+  font-weight: 600;
 
-  a {
-    text-decoration: none;
-
-    font-weight: 600;
-
-    padding: 3px;
-  }
-  .bnt-change-theme {
-    font-weight: 600;
-    padding: 3px;
-  }
-  .bnt-search {
-    font-weight: 600;
-    padding: 3px;
-  }
+  margin-left: 20px;
+  margin-right: 20px;
 }

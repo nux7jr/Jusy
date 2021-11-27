@@ -1,0 +1,2 @@
+Общие стили разметки в папке blocks
+ВСЕ Цвета на сайте записаны в dark-theme.css/lite-theme.css 

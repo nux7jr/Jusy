@@ -6,6 +6,10 @@
   color: $color;
   background-color: $bg__color;
 }
+$lite-black: rgb(138, 127, 127);
+$semi-black: #373737;
+$almost-white: #f4f4f4;
+$lite-black: rgb(0, 0, 0);
 
 body {
   @include theme_color(rgb(0, 0, 0), #f4f4f4, rgb(110, 105, 105));
