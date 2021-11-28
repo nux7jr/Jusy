@@ -1,6 +1,6 @@
 @mixin theme_color(
-  $color: #f4f4f4,
-  $bg__color: #373737,
+  $color: #000000,
+  $bg__color: #ffffff,
   $border__color: rgb(138, 127, 127)
 ) {
   color: $color;
@@ -10,7 +10,19 @@ $lite-black: rgb(138, 127, 127);
 $semi-black: #373737;
 $almost-white: #f4f4f4;
 $lite-black: rgb(0, 0, 0);
-
+$marron: rgb(206, 188, 188);
 body {
-  @include theme_color(rgb(0, 0, 0), #f4f4f4, rgb(110, 105, 105));
+  @include theme_color();
+}
+a:hover {
+  color: $lite-black;
+}
+a {
+  color: black;
+}
+header {
+  background-color: $marron;
+}
+.nav__link {
+  color: black;
 }

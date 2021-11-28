@@ -1,12 +1,40 @@
 @mixin theme_color(
-  $color: #f4f4f4,
-  $bg__color: #373737,
+  $color: #000000,
+  $bg__color: #ffffff,
   $border__color: rgb(138, 127, 127)
 ) {
   color: $color;
   background-color: $bg__color;
 }
-
+$lite-black: rgb(138, 127, 127);
+$semi-black: #373737;
+$almost-white: #f4f4f4;
+$lite-black: rgb(0, 0, 0);
+$marron: rgb(104, 95, 95);
 body {
-  @include theme_color(rgb(252, 252, 252), #111111, rgb(214, 196, 196));
+  @include theme_color(#f4f4f4, #111111, rgb(138, 127, 127));
+}
+a:hover {
+  color: white;
+}
+a {
+  color: rgb(255, 255, 255);
+}
+header {
+  background-color: $marron;
+}
+.nav__link {
+  color: rgb(255, 255, 255);
+}
+.card__item {
+  border: 2px solid rgba(252, 252, 252, 0.753);
+  box-shadow: 1px 2px 8px 0px rgba(218, 215, 215, 0.2);
+}
+.main-info__item:last-child {
+  border: 2px solid rgba(252, 252, 252, 0.753);
+  box-shadow: 1px 2px 8px 0px rgba(218, 215, 215, 0.2);
+}
+.main-info {
+  border: 2px solid rgba(252, 252, 252, 0.753);
+  box-shadow: 1px 2px 8px 0px rgba(218, 215, 215, 0.2);
 }
