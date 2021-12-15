@@ -20,7 +20,7 @@ function scssTask(){
 
 // JavaScript Task
 function jsTask(){
-  return src('app/js/script.js', { sourcemaps: true })
+  return src('app/js/*.js', { sourcemaps: true })
     .pipe(dest('dist/js', { sourcemaps: '.' }));
 }
 
@@ -43,7 +43,7 @@ function browsersyncReload(cb){
 // Watch Task
 function watchTask(){
   watch('*.html', browsersyncReload);
-  watch(['app/scss/**/*.scss', 'app/js/**/*.js'], series(scssTask, jsTask, browsersyncReload));
+  watch(['app/scss/**/*.scss', 'app/js/**/*.js'], {interval: 1000, usePolling: true}, series(scssTask, jsTask, browsersyncReload) );
 }
 
 // Default Gulp task

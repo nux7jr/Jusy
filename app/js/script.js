@@ -10,7 +10,6 @@ function ChangeTheme()
 {
     let lightTheme = "/dist/style/blocks/lite-theme.css";
     let darkTheme = "/dist/style/blocks/dark-theme.css";
-    console.log("222")
     var currTheme = link.getAttribute("href");
     var theme = "";
 
