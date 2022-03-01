@@ -1,29 +1,26 @@
 {
-  "name": "gulp-browsersync",
+  "name": "jusy",
   "version": "1.0.0",
-  "description": "Source code for the Browsersync + Gulp tutorial on Coder Coder.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.26.13",
-    "cssnano": "^4.1.10",
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-terser": "^1.4.0",
-    "postcss": "^8.1.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nux7jr/Jusy.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/nux7jr/Jusy/issues"
   },
-  "homepage": "https://github.com/nux7jr/Jusy#readme"
+  "homepage": "https://github.com/nux7jr/Jusy#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9"
+  }
 }

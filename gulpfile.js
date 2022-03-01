@@ -1,7 +1,7 @@
-const { notify } = require('browser-sync');
-const { src, dest, watch, series } = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const browsersync = require('browser-sync').create();
+const { notify } = require("browser-sync");
+const { src, dest, watch, series } = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const browsersync = require("browser-sync").create();
 
 // Sass Task
 
@@ -11,45 +11,40 @@ const browsersync = require('browser-sync').create();
 //     .pipe(sass())
 //     .pipe(dest('dist', { sourcemaps: '.' }));
 // }
-function scssTask(){
-  return src('app/scss/**/*.scss')
-    .pipe(sass())
-    .pipe(dest('dist/style'));
+function scssTask() {
+  return src("app/scss/**/*.scss").pipe(sass()).pipe(dest("dist/style"));
 }
 
-
 // JavaScript Task
-function jsTask(){
-  return src('app/js/*.js', { sourcemaps: true })
-    .pipe(dest('dist/js', { sourcemaps: '.' }));
+function jsTask() {
+  return src("app/js/*.js").pipe(dest("dist/js/"));
 }
 
 // Browsersync Tasks
-function browsersyncServe(cb){
+function browsersyncServe(cb) {
   browsersync.init({
     server: {
-      baseDir: '.'
+      baseDir: ".",
     },
-    notify: false
+    notify: false,
   });
   cb();
 }
 
-function browsersyncReload(cb){
+function browsersyncReload(cb) {
   browsersync.reload();
   cb();
 }
 
 // Watch Task
-function watchTask(){
-  watch('*.html', browsersyncReload);
-  watch(['app/scss/**/*.scss', 'app/js/**/*.js'], {interval: 1000, usePolling: true}, series(scssTask, jsTask, browsersyncReload) );
+function watchTask() {
+  watch("*.html", browsersyncReload);
+  watch(
+    ["app/scss/**/*.scss", "app/js/**/*.js"],
+    { interval: 1000, usePolling: true },
+    series(scssTask, jsTask, browsersyncReload)
+  );
 }
 
 // Default Gulp task
-exports.default = series(
-  scssTask,
-  jsTask,
-  browsersyncServe,
-  watchTask
-);
+exports.default = series(scssTask, jsTask, browsersyncServe, watchTask);

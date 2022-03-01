@@ -1,0 +1,35 @@
+body {
+  color: #f4f4f4;
+  background-color: #111111;
+}
+
+a:hover {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+header {
+  background-color: #685f5f;
+}
+
+.nav__link {
+  color: white;
+}
+
+.card__item {
+  border: 2px solid rgba(252, 252, 252, 0.753);
+  box-shadow: 1px 2px 8px 0px rgba(218, 215, 215, 0.2);
+}
+
+.main-info__item:last-child {
+  border: 2px solid rgba(252, 252, 252, 0.753);
+  box-shadow: 1px 2px 8px 0px rgba(218, 215, 215, 0.2);
+}
+
+.main-info {
+  border: 2px solid rgba(252, 252, 252, 0.753);
+  box-shadow: 1px 2px 8px 0px rgba(218, 215, 215, 0.2);
+}

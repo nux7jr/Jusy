@@ -1,0 +1,20 @@
+body {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a:hover {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+header {
+  background-color: #a79797;
+}
+
+.nav__link {
+  color: black;
+}

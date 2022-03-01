@@ -1,0 +1,27 @@
+.header-info {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+
+.header-info__list {
+  display: flex;
+}
+
+.header-info__link {
+  list-style-type: none;
+}
+.header-info__link a {
+  margin: 5px;
+  text-decoration: none;
+}
+
+.header-info__about-delivery {
+  position: absolute;
+  right: 0;
+  top: -18px;
+}
+
+.header-info__text {
+  text-align: center;
+}

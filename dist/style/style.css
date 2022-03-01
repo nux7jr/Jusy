@@ -1,0 +1,27 @@
+@import url(/dist/style/blocks/header.css);
+@import url(/dist/style/blocks/sample.css);
+@import url(/dist/style/blocks/footer.css);
+@import url(/dist/style/blocks/nav.css);
+@import url(/dist/style/blocks/header-info.css);
+@import url(/dist/style/blocks/card.css);
+@import url(/dist/style/blocks/main-info.css);
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.visually-hidden {
+  display: none;
+}
