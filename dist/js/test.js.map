@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["test.js"],"sourcesContent":["const testJs = () => {\r\n  function test() {\r\n    const testLink = document.querySelectorAll(\".nav__link\");\r\n    console.log(testLink, \"asdasd\");\r\n  }\r\n  test();\r\n};\r\nexport default testJs;\r\n"],"file":"test.js"}

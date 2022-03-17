@@ -1,12 +1,14 @@
+console.log("done");
+
 const theme = () => {
-  var btn = document.getElementById("bnt-change-theme");
-  var link = document.getElementById("theme-link");
+  const btn = document.getElementById("bnt-change-theme");
+  const link = document.getElementById("theme-link");
 
   btn.addEventListener("click", function () {
-    ChangeTheme();
+    changeTheme();
   });
 
-  function ChangeTheme() {
+  function changeTheme() {
     const lightTheme = "/dist/style/blocks/lite-theme.css";
     const darkTheme = "/dist/style/blocks/dark-theme.css";
     let currTheme = link.getAttribute("href");
@@ -21,7 +23,6 @@ const theme = () => {
     }
 
     link.setAttribute("href", currTheme);
-
   }
 };
-export default theme
+theme();

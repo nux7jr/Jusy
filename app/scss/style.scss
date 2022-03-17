@@ -1,10 +1,19 @@
 @import url(/dist/style/blocks/header.css);
 @import url(/dist/style/blocks/sample.css);
 @import url(/dist/style/blocks/footer.css);
-@import url(/dist/style/blocks/nav.css);
 @import url(/dist/style/blocks/header-info.css);
 @import url(/dist/style/blocks/card.css);
 @import url(/dist/style/blocks/main-info.css);
+@import url(/dist/style/blocks/nav.css);
+
+// @import "blocks/header.scss";
+// @import "blocks/sample.scss";
+// @import "blocks/footer.scss";
+// @import "blocks/header-info.scss";
+// @import "blocks/card.scss";
+// @import "blocks/main-info.scss";
+// @import "blocks/nav.scss";
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -22,5 +31,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

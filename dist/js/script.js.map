@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["script.js"],"sourcesContent":["import testJs from \".test\";\r\nimport theme from \".theme\";\r\ntestJs();\r\ntheme();\r\nasd = sss;\r\n"],"file":"script.js"}

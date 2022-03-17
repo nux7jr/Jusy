@@ -2,6 +2,7 @@ const { notify } = require("browser-sync");
 const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const browsersync = require("browser-sync").create();
+const concat = require("gulp-concat");
 
 // Sass Task
 
@@ -17,7 +18,7 @@ function scssTask() {
 
 // JavaScript Task
 function jsTask() {
-  return src("app/js/*.js").pipe(dest("dist/js/"));
+  return src("app/js/*.js").pipe(concat("script.js")).pipe(dest("dist/"));
 }
 
 // Browsersync Tasks
